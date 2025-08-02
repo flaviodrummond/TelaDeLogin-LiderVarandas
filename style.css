@@ -159,9 +159,9 @@ body {
 
 @media (max-width: 600px) {
     .container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
     }
 
     form {
@@ -173,7 +173,37 @@ body {
     }
 
     .input-email input::placeholder,
-.input-password input::placeholder {
-    color: #eeeeee;
+    .input-password input::placeholder {
+        color: #eeeeee;
+    }
 }
+
+@media (max-width: 320px) {
+    .container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .logo img {
+        width: 160px;
+        margin-top: -30px;
+    }
+
+    .text {
+        font-size: 1.8rem;
+    }
+
+     form {
+        margin-top: -60px;
+     }
+
+     .input-email,
+.input-password {
+    margin: 10px 0;
+}
+
+.register {
+    font-size: 12px;
+}
+
 }
